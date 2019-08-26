@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ACam</string>
+    <string name="capture">CAPTURE</string>
+    <string name="image">image</string>
+    <string name="learn">LEARN</string>
+    <string name="detect">DETECT</string>
+    <string name="label">Label</string>
+</resources>
