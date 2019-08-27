@@ -5,4 +5,9 @@
     <string name="learn">LEARN</string>
     <string name="detect">DETECT</string>
     <string name="label">Label</string>
+    <string name="eraser">Eraser</string>
+    <string name="pencil">Pencil</string>
+    <string name="pen">Pen</string>
+    <string name="sharpner">Sharpner</string>
+    <string name="_0">0</string>
 </resources>

@@ -28,7 +28,10 @@ public class MainActivity extends AppCompatActivity {
     private Button btnCamera1;
     private ImageView capturedImage;
     private Bitmap bp;
-    private EditText editText;
+    private EditText editText1;
+    private EditText editText2;
+    private EditText editText3;
+    private EditText editText4;
     private TensorFlowInferenceInterface inferenceInterface;
     private String dat[]={"eraser","pen","sharpner","pencil"};
 
@@ -58,7 +61,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        editText=(EditText)findViewById(R.id.editText);
+        editText1=(EditText)findViewById(R.id.editText6);
+        editText2=(EditText)findViewById(R.id.editText7);
+        editText3=(EditText)findViewById(R.id.editText8);
+        editText4=(EditText)findViewById(R.id.editText9);
 
 
     }
@@ -74,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
             bp=bp.copy(Bitmap.Config.ARGB_8888, false);
             capturedImage.setImageBitmap(bp);
 
-            String label=editText.getText().toString()+".jpeg";
+            String label="data.jpeg";
 
             String path=Environment.getExternalStoragePublicDirectory(
                     Environment.DIRECTORY_PICTURES).toString();
@@ -102,7 +108,6 @@ public class MainActivity extends AppCompatActivity {
         inferenceInterface.run(new String[]{"activation_5/Sigmoid"});
         inferenceInterface.fetch("activation_5/Sigmoid", output);
 
-        // return prediction
         return output;
     }
 
@@ -132,17 +137,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         float result[]= predict(input);
-        float mmax=0;
-        int mmaxi=-1;
-        for(int i=0;i<4;i++)
-        {
-            if(result[i]>mmax)
-            {
-                mmax=result[i];
-                mmaxi=i;
-            }
-        }
-        editText.setText(dat[mmaxi]);
+
+        editText1.setText(Float.toString(result[0]));
+        editText2.setText(Float.toString(result[3]));
+        editText3.setText(Float.toString(result[1]));
+        editText4.setText(Float.toString(result[2]));
 
     }
 }
