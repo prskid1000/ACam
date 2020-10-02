@@ -137,8 +137,8 @@
 
     <ImageView
         android:id="@+id/capturedImage"
-        android:layout_width="200sp"
-        android:layout_height="160sp"
+        android:layout_width="300sp"
+        android:layout_height="180sp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
