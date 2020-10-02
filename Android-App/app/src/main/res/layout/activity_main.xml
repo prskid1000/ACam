@@ -12,7 +12,7 @@
     <EditText
         android:id="@+id/editText4"
         android:layout_width="184dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="4dp"
@@ -37,7 +37,7 @@
     <EditText
         android:id="@+id/editText6"
         android:layout_width="184dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="4dp"
@@ -48,6 +48,7 @@
         android:hint="@string/_0"
         android:inputType="textPersonName"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,7 +58,7 @@
     <EditText
         android:id="@+id/editText5"
         android:layout_width="184dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="4dp"
@@ -82,7 +83,7 @@
     <EditText
         android:id="@+id/editText7"
         android:layout_width="184dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="4dp"
@@ -93,6 +94,7 @@
         android:hint="@string/_0"
         android:inputType="textPersonName"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.936"
         app:layout_constraintStart_toStartOf="parent"
@@ -102,7 +104,7 @@
     <Button
         android:id="@+id/btnCamera2"
         android:layout_width="fill_parent"
-        android:layout_height="51dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="64dp"
         android:layout_marginRight="64dp"
         android:backgroundTint="@android:color/holo_red_dark"
@@ -135,12 +137,13 @@
 
     <ImageView
         android:id="@+id/capturedImage"
-        android:layout_width="377dp"
-        android:layout_height="293dp"
+        android:layout_width="200sp"
+        android:layout_height="160sp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
         android:contentDescription="@string/image"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toTopOf="@+id/editText4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -151,7 +154,7 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="185dp"
-        android:layout_height="53dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="4dp"
@@ -176,7 +179,7 @@
     <EditText
         android:id="@+id/editText8"
         android:layout_width="185dp"
-        android:layout_height="53dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="4dp"
@@ -187,6 +190,7 @@
         android:hint="@string/_0"
         android:inputType="textPersonName"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
@@ -196,7 +200,7 @@
     <EditText
         android:id="@+id/editText2"
         android:layout_width="184dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="4dp"
@@ -221,7 +225,7 @@
     <EditText
         android:id="@+id/editText9"
         android:layout_width="184dp"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="4dp"
@@ -232,6 +236,7 @@
         android:hint="@string/_0"
         android:inputType="textPersonName"
         android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
